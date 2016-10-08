@@ -1,16 +1,18 @@
 from sqlalchemy import Column, Integer, String
-from flask_sqlalchemy import SQLAlchemy
 
 
 class ArticleMetadata(object):
-    __tablename__ = 'articles'
+    __tablename__ = 'articlesMetadata'
 
     author = Column(String)
     title = Column(String)
     description = Column(String)
     url = Column(String)
-    published_at = Column(Date)
+    published_at = Column(String)
 
-    def __init__(self, article_metadata, content=""):
-        self.article_metadata = article_metadata
-        self.content = content
+    def __init__(self, author, title, description, url, published_at):
+        self.author = author
+        self.title = title
+        self.description = description
+        self.url = url
+        self.published_at = published_at
