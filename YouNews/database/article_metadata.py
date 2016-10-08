@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String
+from younews.database.database import Base
 
-
-class ArticleMetadata(object):
+class ArticleMetadata(Base):
     __tablename__ = 'articlesMetadata'
 
     author = Column(String)
