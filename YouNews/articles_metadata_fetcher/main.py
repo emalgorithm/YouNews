@@ -1,5 +1,5 @@
 import sys
-from YouNews.articles_metadata_fetcher.articles_metadata_fetcher import ArticleMetadataFetcher
+from YouNews.articles_metadata_fetcher.articles_metadata_fetcher import ArticlesMetadataFetcher
 
 
 def main(args=None):
@@ -9,7 +9,7 @@ def main(args=None):
     if args is None:
         args = sys.argv[1:]
 
-    amf = ArticleMetadataFetcher()
+    amf = ArticlesMetadataFetcher()
     amf.run()
 
 if __name__ == "__main__":
