@@ -1,8 +1,8 @@
 import requests
 
+from YouNews.database.article_metadata import Article
 from YouNews.kafka_client.consumer import Consumer
 from YouNews.kafka_client.producer import Producer
-from YouNews.models.article_metadata import Article
 
 
 class ArticlesContentFetcher(Consumer, Producer):
